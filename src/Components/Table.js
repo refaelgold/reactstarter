@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Table = () => {
     return (
-        <table className="table table-borderless  table-hover">
+        <table className="table   table-dark table-hover"  role="button">
             <thead>
-            <tr>
+            <tr className="fw-bold">
                 <th scope="col">#</th>
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
