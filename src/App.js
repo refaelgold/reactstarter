@@ -30,10 +30,37 @@ function App() {
         <Container>
             <Row>
                 <Col>
+                    <Table />
+                </Col>
+                <Col>
                     {/*Silence is Golden*/}
                 </Col>
                 <Col>
-                    <Table />
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
+                </Col>
+                <Col>
+                    {/*Silence is Golden*/}
                 </Col>
                 <Col>
                     {/*Silence is Golden*/}
