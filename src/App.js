@@ -1,6 +1,7 @@
 import './App.css';
 import NavbarComponent from "./Navigation/NavbarComponent.js";
 import Table from "./Components/Table.js";
+import CarouselExample from "./Components/CarouselExample.js";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -67,6 +68,11 @@ function App() {
                 </Col>
             </Row>
         </Container>
+      <Container>
+          <Row>
+              <CarouselExample/>
+          </Row>
+      </Container>
     </body>
   );
 }
