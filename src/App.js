@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function App() {
     return (
@@ -110,6 +111,20 @@ function App() {
               <Col>
                   <Button variant="outline-link">Link</Button>
               </Col>
+          </Row>
+      </Container>
+      <Container>
+          <Row>
+              <Col>
+                  <ButtonGroup aria-label="Basic example" dir="ltr">
+                      <Button variant="secondary">Left</Button>
+                      <Button variant="secondary">Middle</Button>
+                      <Button variant="secondary">Right</Button>
+                  </ButtonGroup>
+              </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
           </Row>
       </Container>
     </div>
