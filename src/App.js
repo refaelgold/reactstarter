@@ -9,7 +9,6 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 function App() {
   return (
-      <ThemeProvider dir="rtl">
       <body>
         <header>
           <NavbarComponent />
@@ -76,7 +75,6 @@ function App() {
           </Row>
       </Container>
     </body>
-</ThemeProvider>
   );
 }
 
