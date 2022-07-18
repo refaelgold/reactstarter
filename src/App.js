@@ -7,8 +7,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function App() {
-  return (
-      <body>
+    return (
+      <div>
         <header>
           <NavbarComponent />
         </header>
@@ -49,7 +49,7 @@ function App() {
               <CarouselExample/>
           </Row>
       </Container>
-    </body>
+    </div>
   );
 }
 
