@@ -5,6 +5,7 @@ import CarouselExample from "./Components/CarouselExample.js";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 function App() {
     return (
@@ -47,6 +48,68 @@ function App() {
       <Container>
           <Row>
               <CarouselExample/>
+          </Row>
+      </Container>
+      <Container className='mt-5 mb-5'>
+          <Row>
+              <Col>
+                  <Button variant="primary">Primary</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="secondary">Secondary</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="success">Success</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="warning">Warning</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="danger">Danger</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="info">Info</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="light">Light</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="dark">Dark</Button>
+              </Col>
+              <Col>
+                  <Button variant="link">Link</Button>
+              </Col>
+          </Row>
+      </Container>
+      <Container className='mt-5 mb-5'>
+          <Row>
+              <Col>
+                  <Button variant="outline-primary">Primary</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-secondary">Secondary</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-success">Success</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-warning">Warning</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-danger">Danger</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-info">Info</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-light">Light</Button>{' '}
+              </Col>
+              <Col>
+                  <Button variant="outline-dark">Dark</Button>
+              </Col>
+              <Col>
+                  <Button variant="outline-link">Link</Button>
+              </Col>
           </Row>
       </Container>
     </div>
