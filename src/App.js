@@ -5,7 +5,6 @@ import CarouselExample from "./Components/CarouselExample.js";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 function App() {
   return (
@@ -41,31 +40,7 @@ function App() {
                     {/*Silence is Golden*/}
                 </Col>
                 <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
-                </Col>
-                <Col>
-                    {/*Silence is Golden*/}
+
                 </Col>
             </Row>
         </Container>
