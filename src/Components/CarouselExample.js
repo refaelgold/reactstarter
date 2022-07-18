@@ -8,7 +8,7 @@ const CarouselExample = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="http://via.placeholder.com/800x400?text=First slide&bg=373940"
+                    src="https://picsum.photos/800/400"
                     alt={t("First slide")}
                 />
                 <Carousel.Caption>
@@ -19,7 +19,7 @@ const CarouselExample = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="http://via.placeholder.com/800x400?text=Second slide&bg=373940"
+                    src="https://picsum.photos/800/400"
                     alt={t("Second slide")}
                 />
 
@@ -31,7 +31,7 @@ const CarouselExample = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="http://via.placeholder.com/800x400?text=Third slide&bg=373940"
+                    src="https://picsum.photos/800/400"
                     alt={t("Third slide")}
                 />
 
