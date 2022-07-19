@@ -115,6 +115,12 @@ function App() {
       </Container>
       <Container>
           <Row>
+
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
               <Col>
                   <ButtonGroup aria-label="Basic example" dir="ltr">
                       <Button variant="secondary">Left</Button>
@@ -122,6 +128,9 @@ function App() {
                       <Button variant="secondary">Right</Button>
                   </ButtonGroup>
               </Col>
+              <Col></Col>
+              <Col></Col>
+              <Col></Col>
               <Col></Col>
               <Col></Col>
               <Col></Col>
