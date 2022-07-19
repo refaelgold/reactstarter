@@ -2,6 +2,7 @@ import './App.css';
 import NavbarComponent from "./Navigation/NavbarComponent.js";
 import Table from "./Components/Table.js";
 import CarouselExample from "./Components/CarouselExample.js";
+import FormReactBootstrap from "./Components/FormReactBootstrap.js";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -49,6 +50,14 @@ function App() {
       <Container>
           <Row>
               <CarouselExample/>
+          </Row>
+      </Container>>
+      <Container>
+          <Row>
+              <Col>
+                  <FormReactBootstrap/>
+              </Col>
+              <Col></Col>
           </Row>
       </Container>
       <Container className='mt-5 mb-5'>
