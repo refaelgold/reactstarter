@@ -9,11 +9,23 @@ const Welcome = (props: { name: string  }) => {
 }
 
 
+const ShoppingList = (props: { name: string  }) => {
+        return (
+            <div className="shopping-list">
+                <h1>רשימת הקניות עבור  {props.name}</h1>
+                <ul>
+                    <li>Instagram</li>
+                    <li>WhatsApp</li>
+                    <li>Oculus</li>
+                </ul>
+            </div>
+        );
+}
+
 
 const ReactOfficialTutorial = () => {
     const {t} = useTranslation();
      return (
-         <div>
             <Container>
                 <Row>
                     <h1> {t("ReactJS official Tutorial")}</h1>
@@ -24,8 +36,14 @@ const ReactOfficialTutorial = () => {
                     <Welcome name={'שמנמני'}/>
                     <Welcome name={'בדיקות'}/>
                  </Row>
+                <Row>
+
+                </Row>
+                 <Row>
+                    <ShoppingList name={'ניר'} />
+                 </Row>
              </Container>
-         </div>
+
      );
  };
  export  {ReactOfficialTutorial}
