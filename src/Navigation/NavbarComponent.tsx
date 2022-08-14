@@ -14,7 +14,7 @@ const NavbarComponent = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         {/*<Nav.Link href="#home">{t("Home")}</Nav.Link>*/}
-                        <Nav.Link href="#link">{t("Link")}2</Nav.Link>
+                        <Nav.Link href="/log_rocket">{t("Log Rocket")}</Nav.Link>
                         <Nav.Link href="#link">{t("Link")}3</Nav.Link>
                         <Nav.Link href="/faq" >
                             {t("FAQ")}
