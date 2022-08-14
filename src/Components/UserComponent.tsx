@@ -2,21 +2,20 @@ import * as React from "react";
 import UserInterface from '../UserInterface'
 
 export default class UserComponent extends React.Component<UserInterface, {}> {
-    // eslint-disable-next-line @typescript-eslint/no-useless-constructor
     constructor (props: UserInterface){
         super(props);
     }
     render() {
         return (
             <div>
-                <h1>User Component</h1>
-                Hello, <b>{this.props.name}</b>
+                <h1>קומפוננטת משתמש</h1>
+                שלום, <b>{this.props.name}</b>
                 <br/>
-                You are <b>{this.props.age} years old</b>
+                הגיל שלך הוא:   <b>{this.props.age}</b>
                 <br/>
-                You live at: <b>{this.props.address}</b>
+                הכתובת שלך היא:  <b>{this.props.address}</b>
                 <br/>
-                You were born: <b>{this.props.dob.toDateString()}</b>
+                נולדת ב:  <b> {this.props.dob.toLocaleString("he-IL")}</b>
             </div>
         );
     }

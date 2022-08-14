@@ -15,7 +15,7 @@ const LogRocket = () => {
                     <FirstComponent/>
                 </Row>
                 <Row>
-                    <UserComponent name="John Doe" age={26} address="87 Summer St, Boston, MA 02110" dob={new Date()} />
+                    <UserComponent name="גון דו" age={26} address="בן יהודה 27 , תל אביב" dob={new Date()} />
                 </Row>
              </Container>
 
