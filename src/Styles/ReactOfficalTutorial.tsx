@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    padding-top: 150px;
     margin: 0 auto;
+    padding:10px;
+    border:1px solid red;
 `;
 
 export const Paragraph = styled.h2`
