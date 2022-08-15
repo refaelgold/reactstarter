@@ -26,7 +26,7 @@ const ShoppingList = (props: { name: string  }) => {
 }
 
 const FetchTutorial = () => {
-    const [advice, setAdvice] = useState("");
+    const [advice, setAdvice] = useState("null");
     useEffect(() => {
         const url = "https://api.adviceslip.com/advice";
         const fetchData = async () => {
