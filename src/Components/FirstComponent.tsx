@@ -6,7 +6,7 @@ const FirstComponent = () => {
         return (
             <Container>
                 <h3>בדיקה עבור קומפוננטה פשוטה עם TypeScript</h3>
-                <img height="100" src={Logo} width="250" />
+                <img height="100" src={Logo} width="250" alt={'logo'} />
                 <p>הקומפוננטה הזאת מראה את הלוגו של Rocket Log</p>
                 <p>לדוגמאות נוספות , יש להכנס לאתר של Rocket Log</p>
             </Container>
