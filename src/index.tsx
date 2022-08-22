@@ -1,8 +1,9 @@
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from "react-dom/client";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import './i18n.tsx';//GLOBAL CALL
 
@@ -12,11 +13,11 @@ const root = createRoot(rootElement);
 
 
 root.render(
-    <ThemeProvider dir="rtl">
-        <BrowserRouter>
+    <React.StrictMode>
+        <Router>
             <App />
-        </BrowserRouter>
-    </ThemeProvider>
+        </Router>
+    </React.StrictMode>,
 );
 
 
