@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import CourseGoalList from '../Components/UdemyBasicComponents/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from '../Components/UdemyBasicComponents/CourseGoals/CourseInput/CourseInput';
 import '../css/UdemyReact.css';
+import AddUser from "../Components/UdemyBasicComponents/Users/AddUser";
+import Col from "react-bootstrap/Col";
 
 
 const UdemyReact = () => {
@@ -46,26 +48,39 @@ const UdemyReact = () => {
                     <h1> {t("Udemy React - The Complete Guide  Tutorial")}</h1>
                 </Row>
             </Container>
-            <section id="goal-form">
-                <CourseInput onAddGoal={addGoalHandler} />
-            </section>
-            <section id="goals">
-                {content}
-                {/* {courseGoals.length > 0 && (
+            <Container>
+                    <Row>
+                        <Col></Col>
+                        <Col></Col>
+                        <Col>
+                            <h2 className={'center text-orange'}>טופס ראשון</h2>
+                        </Col>
+                        <Col></Col>
+                        <Col></Col>
+                    </Row>
+                    <Row id="goal-form">
+                        <CourseInput onAddGoal={addGoalHandler} />
+                    </Row>
+                    <Row id="goals">
+                        {content}
+                        {/* {courseGoals.length > 0 && (
           <CourseGoalList
             items={courseGoals}
             onDeleteItem={deleteItemHandler}
           />
         ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
         } */}
-            </section>
+                    </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <Col></Col>
+                    <Col><AddUser/></Col>
+                    <Col></Col>
+                </Row>
+            </Container>
+
         </div>
     );
-
-
-
-
-
-
  };
  export  {UdemyReact}
