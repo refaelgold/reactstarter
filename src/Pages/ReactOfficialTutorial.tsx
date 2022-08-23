@@ -42,12 +42,50 @@ const FetchTutorial = () => {
         };
         fetchData();
     }, []);
+
+
+
     return (
         <Wrapper>
             <Paragraph>{advice}</Paragraph>
         </Wrapper>
     );
 };
+
+
+
+
+const FetchListTutorial = () => {
+
+    const [users, setUsers] = useState<any[]>([]);
+
+// Function to collect data
+    const getApiData = async () => {
+        const response = await fetch(
+            "https://jsonplaceholder.typicode.com/todos/"
+        ).then((response) => response.json());
+
+        setUsers(response);
+    };
+
+    useEffect(() => {
+        getApiData();
+    }, []);
+
+    return (
+        <Row>
+            <div>
+                {users &&
+                    users.map((user: any) => (
+                            <li key={user.id}>{user.title}</li>
+                    ))}
+            </div>
+        </Row>
+    );
+}
+
+
+
 
 
 const ReactOfficialTutorial = () => {
@@ -57,20 +95,34 @@ const ReactOfficialTutorial = () => {
                 <Row>
                     <h1> {t("ReactJS official Tutorial")}</h1>
                 </Row>
-                 <Row>
+                <Row>
                     <Welcome name={'דנה'}/>
                     <Welcome name={'ניר'}/>
                     <Welcome name={'שמנמני'}/>
                     <Welcome name={'בדיקות'}/>
-                 </Row>
+                </Row>
+                <Row>
+                    <ShoppingList name={'ניר'} />
+                </Row>
                 <Row>
                     <FetchTutorial/>
                 </Row>
-                 <Row>
-                    <ShoppingList name={'ניר'} />
-                 </Row>
-             </Container>
+                <Row>
+                    <FetchListTutorial/>
+                </Row>
 
+             </Container>
      );
  };
+
+
+
+
+
+
+
+
+
+
+
  export  {ReactOfficialTutorial}
