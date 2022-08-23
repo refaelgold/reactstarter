@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 import classes from "./Card.module.css";
 import {useState} from "react";
 
-
 const AddUser = (props:any) => {
     const [enteredUsername,setEnteredUsername]=useState('');
     const [enteredAge,setEnteredAge]=useState('');
@@ -14,7 +13,18 @@ const AddUser = (props:any) => {
 
     const addUserHandler = (event:any)=>{
         event.preventDefault();
-        console.log(enteredAge,enteredUsername)
+        if (enteredUsername.trim().length===0 || enteredAge.trim().length<=0){
+            console.log("error");
+            return;
+        }
+        if (+enteredAge<=0){
+            console.log("error");
+            return;
+        }
+        setEnteredAge('');
+        setEnteredUsername('');
+        console.log(enteredAge,enteredUsername);
+
     }
 
 
@@ -38,11 +48,11 @@ const AddUser = (props:any) => {
                 <Form  onSubmit={addUserHandler}>
                     <Form.Group className="mb-3">
                         <Form.Label>משתמש</Form.Label>
-                        <Form.Control id='username' type="text" onChange={usernameChangeHandler} />
+                        <Form.Control id='username' type="text" value={enteredUsername} onChange={usernameChangeHandler} />
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label htmlFor='age'>גיל</Form.Label>
-                        <Form.Control id='age' type="number"  onChange={ageChangeHandler} />
+                        <Form.Control id='age' type="number"  value={enteredAge} onChange={ageChangeHandler} />
                     </Form.Group>
                     <Button variant="primary" type="submit" >
                         {t('Add User')}
