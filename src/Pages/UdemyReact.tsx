@@ -51,7 +51,7 @@ const UdemyReact = () => {
 
     const PushUserHandler = (uName:string,uAge:number) => {
         setUserListArr((prevUserList:any[])=>{
-            return [...prevUserList,{name:uName,age:uAge}]; // get the array instance and push one data row inside
+            return [...prevUserList,{name:uName,age:uAge,id: Math.random().toString()}]; // get the array instance and push one data row inside
         })
     }
     return (
