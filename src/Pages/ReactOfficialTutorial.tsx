@@ -33,8 +33,8 @@ const FetchTutorial = () => {
             try {
                 const response = await fetch(url);
                 const json = await response.json();
-                console.log(json);
-                console.log(json.slip.advice);//target the call
+                // console.log(json);
+                // console.log(json.slip.advice);//target the call
                 setAdvice(json.slip.advice);
             } catch (error) {
                 console.log("error", error);
