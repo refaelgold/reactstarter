@@ -6,6 +6,7 @@ import CourseGoalList from '../Components/UdemyBasicComponents/CourseGoals/Cours
 import CourseInput from '../Components/UdemyBasicComponents/CourseGoals/CourseInput/CourseInput';
 import '../css/UdemyReact.css';
 import AddUser from "../Components/UdemyBasicComponents/Users/AddUser";
+import UserList from "../Components/UdemyBasicComponents/Users/UserList";
 import Col from "react-bootstrap/Col";
 
 
@@ -41,6 +42,18 @@ const UdemyReact = () => {
             <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} />
         );
     }
+
+
+
+
+    // 4.Take the single data row and put it inside the array MODEL LOGIC
+    const [userListArr,setUserListArr]= useState<any[]>([]);
+
+    const PushUserHandler = (uName:string,uAge:number) => {
+        setUserListArr((prevUserList:any[])=>{
+            return [...prevUserList,{name:uName,age:uAge}]; // get the array instance and push one data row inside
+        })
+    }
     return (
         <div>
             <Container>
@@ -63,23 +76,21 @@ const UdemyReact = () => {
                     </Row>
                     <Row id="goals">
                         {content}
-                        {/* {courseGoals.length > 0 && (
-          <CourseGoalList
-            items={courseGoals}
-            onDeleteItem={deleteItemHandler}
-          />
-        ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
-        } */}
                     </Row>
             </Container>
             <Container>
                 <Row>
                     <Col></Col>
-                    <Col><AddUser/></Col>
+                    <Col>
+
+
+                        <AddUser onAddUser={PushUserHandler}/>   {/* 3.call for push data row to array by trigger*/}
+                        {/*5.get the user list inside the User when UserList is array and enter it to arr var inside UserList*/}
+                        <UserList users={userListArr}/>
+                    </Col>
                     <Col></Col>
                 </Row>
             </Container>
-
         </div>
     );
  };
