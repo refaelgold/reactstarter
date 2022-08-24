@@ -51,7 +51,7 @@ const UdemyReact = () => {
 
     const PushUserHandler = (uName:string,uAge:number) => {
         setUserListArr((prevUserList:any[])=>{
-            return [...prevUserList,{name:uName,age:uAge,id: Math.random().toString()}]; // get the array instance and push one data row inside
+            return [...prevUserList,{name:uName,age:uAge,id: Math.random().toString()}]; // get the Array instance and push one data row inside <UserList> Component
         })
     }
     return (
@@ -84,8 +84,8 @@ const UdemyReact = () => {
                     <Col>
 
 
-                        <AddUser onAddUser={PushUserHandler}/>   {/* 3.call for push data row to array by trigger*/}
-                        {/*5.get the user list inside the User when UserList is array and enter it to arr var inside UserList*/}
+                        <AddUser onAddUser={PushUserHandler}/>   {/* 3.call for push data row to array by triggered automaticly as a chain from AddUser activated with button*/}
+                        {/*5.GOING FOR VIEW ---> get the user list inside the User when UserList is array and enter it to arr var inside UserList*/}
                         <UserList users={userListArr}/>
                     </Col>
                     <Col></Col>

@@ -12,7 +12,7 @@ const AddUser = (props:any) => {
 
 
 
-    //2.First call after submit Trigger EVENT controller
+    //2.First call after submit Trigger EVENT CONTROLLER
     const addUserHandler = (event:any)=>{
         event.preventDefault();
         if (enteredUsername.trim().length===0 || enteredAge.trim().length<=0){
@@ -23,7 +23,7 @@ const AddUser = (props:any) => {
             console.log("error");
             return;
         }
-        props.onAddUser(enteredAge,enteredUsername); // 3.next  called  <AddUser onAddUser={PushUserHandler}/> and put the data inside the array
+        props.onAddUser(enteredAge,enteredUsername); // 3.next  called  <AddUser onAddUser={PushUserHandler}/> and put the data inside the array GO FOR MODEL AND "MAIN" COMPONENTS
         setEnteredAge('');
         setEnteredUsername('');
 
@@ -47,7 +47,7 @@ const AddUser = (props:any) => {
             <Card.Img variant="top" src="https://placeimg.com/640/480/any" />
             <Card.Body>
                 <Card.Title>כותרת הכרטיס</Card.Title>
-                <Form  onSubmit={addUserHandler}> {/*1.submit the data for SINGLE data */}
+                <Form  onSubmit={addUserHandler}> {/*1. CONTROLLER START WITH FORM AND DATA INSTEST submit the data for SINGLE data */}
                     <Form.Group className="mb-3">
                         <Form.Label>משתמש</Form.Label>
                         <Form.Control id='username' type="text" value={enteredUsername} onChange={usernameChangeHandler} />
