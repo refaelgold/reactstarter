@@ -1,4 +1,4 @@
-import {useTranslation} from "react-i18next";
+import {useTranslation} from 'react-i18next';
 
 const TailWindTutorial = () => {
     const {t} = useTranslation();
@@ -6,7 +6,7 @@ const TailWindTutorial = () => {
     return (
         <div>
             <h1>
-                {t("TailWind Tutorial")}
+                {t('TailWind Tutorial')}
             </h1>
             <section className="bg-white dark:bg-gray-900">
     <div className="container px-6 py-10 mx-auto">
@@ -17,7 +17,7 @@ const TailWindTutorial = () => {
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    <a href="/#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         How to use sticky note for problem solving
                     </a>
                     
@@ -29,7 +29,7 @@ const TailWindTutorial = () => {
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    <a href="/#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         How to use sticky note for problem solving
                     </a>
 
@@ -41,7 +41,7 @@ const TailWindTutorial = () => {
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1544654803-b69140b285a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    <a href="/#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         Morning routine to boost your mood
                     </a>
 
@@ -53,7 +53,7 @@ const TailWindTutorial = () => {
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1547&q=80" alt=""/>
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    <a href="/#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         All the features you want to know
                     </a>
 
@@ -65,7 +65,7 @@ const TailWindTutorial = () => {
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80" alt=""/>
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    <a href="/#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         Minimal workspace for your inspirations
                     </a>
 
@@ -77,7 +77,7 @@ const TailWindTutorial = () => {
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
-                    <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                    <a href="/#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
                         What do you want to know about Blockchane
                     </a>
                     

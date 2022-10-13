@@ -6,10 +6,6 @@ module.exports = {
     {
       files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       rules: {
-        'jsx-a11y/anchor-is-valid': ['error', {
-          'components': [ 'Link' ],
-          'specialLink': [ 'to' ]
-        }],    
         'prettier/prettier': 0,
         'quotes': [1, 'single', 'avoid-escape'],
         'no-shadow': 'off',
