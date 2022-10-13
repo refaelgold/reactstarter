@@ -22,6 +22,9 @@ const NavbarComponent = () => {
                         <Nav.Link href="/react_official_tutorial" >
                             {t("ReactJS official Tutorial")}
                         </Nav.Link>
+                        <Nav.Link href="/tailwind_tutorial" >
+                            {t("TailWind Tutorial")}
+                        </Nav.Link>
                         {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
                         {/*    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>*/}
                         {/*    <NavDropdown.Item href="#action/3.2">*/}

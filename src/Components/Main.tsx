@@ -3,6 +3,7 @@ import {FAQ} from '../Pages/FAQ';
 import Index from "../Pages/Index";
 import Container from "react-bootstrap/Container";
 import {ReactOfficialTutorial} from "../Pages/ReactOfficialTutorial";
+import {TailWindTutorial} from "../Pages/TailWindTutorial";
 
 
 const Main = () => {
@@ -12,6 +13,8 @@ const Main = () => {
                 <Route path="/"   element={<Index />}></Route>
                 <Route  path='/faq' element={<FAQ/>} />
                 <Route  path='/react_official_tutorial' element={<ReactOfficialTutorial/>} />
+                <Route  path='/tailwind_tutorial' element={<TailWindTutorial/>} />
+
                 {/*<Route exact path='/signup' component={Signup}></Route>*/}
             </Routes>
         </Container>
