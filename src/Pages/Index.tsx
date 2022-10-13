@@ -16,7 +16,7 @@ function Index() {
         <div>
             <Container>
                 <Row className="row mt-4 mb-4">
-                    <h1 className="text-primary fw-bold font-monospace">לורם איפסום</h1>
+                    <h1 className="text-primary fw-bold font-monospace  text-3xl font-bold underline">לורם איפסום</h1>
                 </Row>
                 <Row className="mt-4 mb-4">
                     <p className="text-secondary">
