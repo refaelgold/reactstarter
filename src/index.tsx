@@ -3,6 +3,7 @@ import reportWebVitals from './reportWebVitals';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from "react-dom/client";
+import './css/index.css';
 
 import './i18n.tsx';//GLOBAL CALL
 
